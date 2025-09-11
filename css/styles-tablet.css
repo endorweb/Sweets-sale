@@ -8,8 +8,8 @@
     }
 
     /* Header */
-    .header{
-        background-color: rgb(0, 0, 0);
+    .header {
+        background-color: rgb(89, 39, 27);
         position: fixed;
         width: 100%;
         z-index: 3000;
@@ -19,13 +19,14 @@
 
     }
 
-    .header a{
+    .header a {
         color: white;
     }
 
-    .banner{
+    .banner {
         margin-top: 80px;
     }
+
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -54,7 +55,7 @@
         width: 80%;
         max-width: 300px;
         height: 100vh;
-        background: rgb(255, 132, 177);
+        background: rgb(101, 52, 40);
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         transition: all 0.5s ease;
         z-index: 4999;
@@ -93,7 +94,7 @@
 
     .overlay {
         display: none;
-        background-color: rgba(128, 128, 128, 0.53);
+        background-color: rgba(0, 0, 0, 0.274);
         width: 100%;
         position: fixed;
         top: 0;
@@ -105,17 +106,7 @@
         display: block;
     }
 
-    .flower {
-        position: absolute;
-        top: -5%;
-        left: 60%;
-        z-index: 4;
-    }
 
-    .flower-two {
-        display: none;
-
-    }
 
     /* banner */
     .banner {
@@ -126,18 +117,33 @@
         padding: 100px 50px 100px 30px;
     }
 
+    .banner img {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        transform: scale(1.5);
+
+
+    }
+
     .banner p {
         width: 400px;
         line-height: 1.5;
         margin-bottom: 30px;
     }
 
-    .banner>div>p{
+    .banner>div>p {
         font-size: 1.3em;
 
     }
-     .banner>div>button>a{
+
+    .banner>div>button>a {
         font-size: 1.5em;
+    }
+
+    .img-design img {
+        width: 75%;
     }
 
     /*  Our Special Dish  */
@@ -154,7 +160,7 @@
 
     }
 
-    .special-dish h2{
+    .special-dish h2 {
         font-size: 2em;
     }
 
@@ -168,7 +174,7 @@
         margin: 0 auto;
     }
 
-    .images p{
+    .images p {
         font-size: 1.8em;
     }
 
@@ -188,11 +194,11 @@
 
     }
 
-    .main-gallery h2{
+    .main-gallery h2 {
         font-size: 2em;
     }
 
-    .main-gallery p{
+    .main-gallery p {
         font-size: 1.3em;
 
     }
@@ -202,23 +208,25 @@
         font-size: 2em;
     }
 
-    .pop-para h3{
+    .pop-para h3 {
         font-size: 2em;
     }
-    .pop-para p{
+
+    .pop-para p {
         font-size: 1.3em;
     }
-    .pop-one{
+
+    .pop-one {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
-    .pop-two{
+    .pop-two {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
-    .pop-three{
+    .pop-three {
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -241,23 +249,23 @@
 
     }
 
-    .our-menu div h4{
+    .our-menu div h4 {
         font-size: 2em;
     }
 
-    .our-menu div p{
+    .our-menu div p {
         font-size: 1.3em;
     }
 
-    .menu-titel{
+    .menu-titel {
         font-size: 1.8em;
     }
 
-    .menu-para{
+    .menu-para {
         font-size: 1.3em;
     }
 
-    .star p{
+    .star p {
         font-size: 1.5em;
     }
 
@@ -302,15 +310,15 @@
     }
 
     /* Reviews */
-    .main-reviews h2{
+    .main-reviews h2 {
         font-size: 1.8em;
     }
 
-    .reviews-image div p:nth-child(1){
+    .reviews-image div p:nth-child(1) {
         font-size: 1.5em;
     }
 
-     .reviews-image p {
+    .reviews-image p {
         font-size: 1.3em;
     }
 
@@ -339,7 +347,7 @@
     }
 
     /* footer */
-    .main-footer{
+    .main-footer {
         font-size: 1.3em;
     }
 
@@ -354,27 +362,28 @@
         width: 200px;
         font-size: 1.2em;
     }
-    .contact-us{
+
+    .contact-us {
         font-size: 1.3em;
     }
 
-    .contact-us span{
+    .contact-us span {
         font-size: 1.5em;
     }
 
-    .quick-links span{
+    .quick-links span {
         font-size: 1.5em;
     }
 
-    .quick-links a{
+    .quick-links a {
         font-size: 1.3em;
     }
 
-    .social-media span{
+    .social-media span {
         font-size: 1.5em;
     }
 
-    .social-media a{
+    .social-media a {
         font-size: 1.3em;
     }
 }
