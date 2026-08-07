@@ -35,7 +35,7 @@
         z-index: 5000;
         position: fixed;
         top: 17px;
-        right: 50px;
+        right: 30px;
     }
 
     .hamburger span {
@@ -49,8 +49,8 @@
     .menu {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 60%;
+        left: -100%;
+        width: 70%;
         max-width: 300px;
         height: 100vh;
         background: rgb(101, 52, 40);
@@ -69,9 +69,12 @@
     }
 
     .menu ul li a {
-        font-size: 1.3em;
+        font-size: 1.1em;
         display: block;
         border-radius: revert;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.468);
+        padding-bottom: 15px;
+        width: 100%;
     }
 
     nav ul li:nth-child(1) {
@@ -81,7 +84,7 @@
     }
 
     .menu-toggle:checked~.menu {
-        right: 0;
+        left: 0;
     }
 
     .menu-toggle:checked+.hamburger span:nth-child(1) {
@@ -110,13 +113,12 @@
         display: block;
     }
 
+
     /* banner */
     .banner {
         all: revert;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
 
         margin-top: 100px;
         margin-bottom: 50px;
@@ -125,7 +127,6 @@
 
     .banner>div {
         margin: 0 auto;
-        text-align: center;
     }
 
     .banner img {
@@ -139,19 +140,24 @@
 
     .banner>div>h1 {
         padding: 0 30px 0 30px;
+        text-align: left;
     }
 
     .banner>div>p {
         all: revert;
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
         padding: 0 30px 0 30px;
         line-height: 1.5;
-        font-size: 1.3em;
+        font-size: 1.1em;
+    }
+
+    .banner>div>button {
+        margin-left: 30px;
     }
 
     .banner>div>button>a {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .img-design {
@@ -164,20 +170,24 @@
         width: 62%;
     }
 
+
     /*  Our Special Dish  */
     .desc-special-dish {
         all: revert;
-        text-align: center;
+        text-align: left;
         width: 80%;
         margin-bottom: 30px;
-        margin: 0 auto;
         line-height: 1.5;
-        font-size: 1.3em;
+        font-size: 1.1em;
+        margin: 0 30px;
 
     }
 
     .special-dish h2 {
-        font-size: 2em;
+        font-size: 1.8em;
+        text-align: left;
+        margin: 0 30px;
+
     }
 
     .images img {
@@ -192,48 +202,63 @@
     }
 
     .images p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .images figure {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     /* Gallery */
     .main-gallery {
-        padding-left: 20px;
-        padding-right: 20px;
+        display: grid;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
     .main-gallery h2 {
         font-size: 2em;
     }
 
-    .main-gallery p {
-        font-size: 1.3em;
-
+    .main-gallery>div>p {
+        font-size: 1.1em;
+        text-align: center;
     }
 
     .sub-gallery {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
+    .sub-gallery>div>img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+
     /* Populer */
     .main-populer h2 {
-        width: 300px;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 50px;
-        font-size: 2em;
+        font-size: 1.3em;
+        line-height: 1.5;
     }
 
     .pop-para h3 {
-        font-size: 2em;
+        font-size: 1.3em;
+        text-align: left;
+        line-height: 1.5;
     }
 
     .pop-para p {
-        font-size: 1.3em;
+        text-align: left;
+        line-height: 1.5;
+
     }
 
     .pop-one {
@@ -241,6 +266,8 @@
         flex-direction: column;
         text-align: center;
         padding-bottom: 50px;
+        padding-left: 30px;
+
     }
 
     .pop-one img {
@@ -252,6 +279,8 @@
         flex-direction: column-reverse;
         text-align: center;
         padding-bottom: 50px;
+        padding-left: 30px;
+
     }
 
     .pop-two img {
@@ -263,6 +292,7 @@
         flex-direction: column;
         text-align: center;
         padding-bottom: 50px;
+        padding-left: 30px;
     }
 
     .pop-three img {
@@ -279,11 +309,12 @@
     }
 
     .our-menu div h4 {
-        font-size: 2em;
+        font-size: 1.7em;
+        line-height: 1.5;
     }
 
     .our-menu div p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .menu-titel {
@@ -331,12 +362,13 @@
         display: block;
         margin-top: 20px;
         border: none;
-        background-color: rgb(84, 25, 47);
+        background-color: rgb(255, 87, 149);
         padding: 10px;
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 100px;
         transition: transform 0.5s ease;
+        font-size: 14px;
     }
 
     .mobile-button a {
@@ -376,12 +408,12 @@
     }
 
     .reviews-image div p:nth-child(1) {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .reviews-image p {
         padding-left: 15px;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .reviews-para {
@@ -420,7 +452,8 @@
 
     /* footer */
     .main-footer {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        line-height: 1.5;
     }
 
     .sub-footer {
@@ -439,19 +472,19 @@
 
     .gps>div>div>p {
         width: 80%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .contact-us {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .contact-us span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .quick-links span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .phone>div>p {
@@ -459,15 +492,15 @@
     }
 
     .quick-links a {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .social-media span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .social-media a {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
 }
@@ -486,7 +519,7 @@
 
 
 /********************************************** Medium mobile device (481px to 767px) **************************************/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
 
     body,
     html {
@@ -534,7 +567,7 @@
     .menu {
         position: fixed;
         top: 0;
-        right: -100%;
+        left: -100%;
         width: 80%;
         max-width: 300px;
         height: 100vh;
@@ -546,9 +579,16 @@
     }
 
     .menu ul li a {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-weight: revert;
+        padding-bottom: 15px;
+        width: 100%;
         display: block;
         border-radius: revert;
+
+
+
     }
 
     .menu ul {
@@ -566,7 +606,7 @@
     }
 
     .menu-toggle:checked~.menu {
-        right: 0;
+        left: 0;
     }
 
     .menu-toggle:checked+.hamburger span:nth-child(1) {
@@ -597,55 +637,26 @@
 
     /* banner */
     .banner {
-        all: revert;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-
-        margin-top: 100px;
-        margin-bottom: 50px;
-    }
-
-    .banner>div {
-        /* margin: 0 auto; */
-        text-align: center;
-    }
-
-    .banner>div>h1 {
-        padding: 0 30px 0 30px;
+        font-size: 1.1em;
     }
 
     .banner>div>p {
-        all: revert;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 30px 0 30px;
-        line-height: 1.5;
-        font-size: 1.2em;
+        width: 90%;
     }
 
     .banner img {
-        width: 70%;
+        width: 100%;
+        max-width: 330px;
         margin: 0 auto;
         margin-top: 100px;
         margin-bottom: 80px;
 
     }
 
-    .banner>div>h1 {
-        padding: 0 30px 0 30px;
-    }
-
-    .banner>div>p {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 30px 0 30px;
-        font-size: 1.3em;
-    }
-
     .banner>div>button>a {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .img-design {
@@ -661,14 +672,13 @@
     /*  Our Special Dish  */
     .desc-special-dish {
         all: revert;
-        text-align: center;
+        text-align: left;
         width: 80%;
         padding-left: 30px;
         padding-right: 30px;
         margin-bottom: 30px;
-        margin: 0 auto;
         line-height: 1.5;
-        font-size: 1.3em;
+        font-size: 1.1em;
 
     }
 
@@ -682,19 +692,24 @@
     .imges-special-dish {
         display: grid;
         grid-template-columns: auto auto;
+        text-align: left;
         gap: 50px;
     }
 
     .special-dish h2 {
         font-size: 2em;
+        text-align: left;
+        margin-left: 30px;
     }
 
     .images p {
-        font-size: 2em;
+        font-size: 1.3em;
+        text-align: left;
     }
 
     .images figure {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        text-align: left;
     }
 
     /* Gallery */
@@ -724,6 +739,8 @@
 
     .sub-gallery>div>img {
         width: 100%;
+        max-width: 600px;
+        height: 190px;
     }
 
     /* Populer */
@@ -735,11 +752,13 @@
     }
 
     .pop-para h3 {
-        font-size: 2em;
+        font-size: 1.5em;
+        text-align: left;
     }
 
     .pop-para p {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        text-align: left;
     }
 
     .pop-one {
@@ -773,23 +792,23 @@
     }
 
     .our-menu div h4 {
-        font-size: 2em;
-    }
-
-    .our-menu div p {
-        font-size: 1.3em;
-    }
-
-    .menu-titel {
         font-size: 1.8em;
     }
 
+    .our-menu div p {
+        font-size: 1.1em;
+    }
+
+    .menu-titel {
+        font-size: 1.2sem;
+    }
+
     .menu-para {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .star p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .sub-our-menu {
@@ -831,6 +850,7 @@
         padding-right: 15px;
         border-radius: 100px;
         transition: transform 0.5s ease;
+        font-size: 14px;
     }
 
     .mobile-button a {
@@ -858,12 +878,12 @@
     }
 
     .reviews-image div p:nth-child(1) {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .reviews-image p {
         padding-left: 15px;
-        font-size: 1.3em;
+        font-size: 1.1em;
 
     }
 
@@ -896,13 +916,15 @@
     .sub-about>div>p {
         text-align: center;
         width: 400px;
-        font-size: 1.3em;
+        font-size: 1.1em;
+        line-height: 1.5;
 
     }
 
     /* footer */
     .main-footer {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        line-height: 1.5;
     }
 
     .sub-footer {
@@ -913,16 +935,16 @@
 
     .gps>div>div>p {
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.1em;
 
     }
 
     .contact-us {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .contact-us span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .phone>div>p {
@@ -930,19 +952,19 @@
     }
 
     .quick-links span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .quick-links a {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .social-media span {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .social-media a {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
 }

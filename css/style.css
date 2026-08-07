@@ -107,7 +107,7 @@ header::after {
 }
 
 .banner p {
-    width: 600px;
+    width: 70%;
     line-height: 1.5;
     font-size: 1.1em;
 }
@@ -237,6 +237,7 @@ header::after {
 .sub-gallery {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 8px;
     margin-top: 30px;
 }
 
@@ -247,15 +248,16 @@ header::after {
 
 .main-gallery p {
     text-align: center;
-    width: 400px;
     margin: 0 auto;
     line-height: 1.5;
 }
 
 .sub-gallery>div>img {
-    width: 98%;
+    width: 100%;
+    max-width: 600px;
     height: 250px;
     border-radius: 5px;
+    display: block;
 }
 
 /* Populer */
@@ -503,6 +505,7 @@ header::after {
 .main-footer {
     padding: 50px;
     background-color: rgba(89, 39, 27, 0.416);
+    line-height: 1.5;
 }
 
 .sub-footer {
