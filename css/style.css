@@ -544,6 +544,7 @@ header::after {
     font-size: 23px;
     font-weight: bold;
     margin-bottom: 30px;
+    font-size: 1.1em;
 }
 
 .phone {
@@ -573,8 +574,8 @@ header::after {
 
 .quick-links span {
     margin-bottom: 30px;
-    font-size: 23px;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .quick-links>div {
@@ -597,7 +598,7 @@ header::after {
 }
 
 .social-media>span {
-    font-size: 23px;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -630,9 +631,86 @@ header::after {
     gap: 10px;
 }
 
-.copy-right {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(89, 39, 27);
-    color: white;
+
+
+/* __________ Go back Footer __________*/
+
+.project-footer {
+    width: 100%;
+    padding: 30px 8%;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid #eee;
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* Brand */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-symbol {
+    font-size: 18px;
+    color: #643ca1;
+}
+
+.footer-brand p {
+    margin: 0 0 4px;
+    font-size: 15px;
+    color: #888;
+}
+
+.footer-brand a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #643ca1;
+
+    transition: 0.3s;
+}
+
+.footer-brand a:hover {
+    color: #3cfe2e;
+}
+
+/* Back button */
+.back-link {
+    /* text-decoration: none; */
+    /* color: #555; */
+
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #643ca1;
+    transform: translateX(-4px);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .project-footer {
+        padding: 30px 6%;
+
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
 }
