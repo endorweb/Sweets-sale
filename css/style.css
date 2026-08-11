@@ -378,7 +378,6 @@ header::after {
 }
 
 .our-menu>div>button {
-
     margin-top: 20px;
     border: none;
     background-color: rgb(255, 87, 149);
@@ -636,21 +635,20 @@ header::after {
 /* __________ Go back Footer __________*/
 
 .project-footer {
-    width: 100%;
-    padding: 30px 8%;
     margin-top: 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 25px;
+    margin-top: 40px;
+    line-height: 1.5;
 
-    border-top: 1px solid #eee;
 
     font-family: 'Inter', sans-serif;
+    /* background-color: rgba(227, 227, 227, 0.128); */
 }
 
 /* Brand */
-
 .footer-brand {
     display: flex;
     align-items: center;
@@ -673,7 +671,7 @@ header::after {
     font-size: 15px;
     font-weight: 700;
     color: #643ca1;
-
+    font-size: 1em;
     transition: 0.3s;
 }
 
@@ -683,10 +681,8 @@ header::after {
 
 /* Back button */
 .back-link {
-    /* text-decoration: none; */
-    /* color: #555; */
 
-    font-size: 15px;
+    font-size: 1em;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -699,18 +695,17 @@ header::after {
 
 /* Mobile */
 @media (max-width: 600px) {
-
     .project-footer {
-        padding: 30px 6%;
+        display: flex;
+        justify-content: space-between;
 
-        flex-direction: column;
         gap: 20px;
 
         text-align: center;
     }
 
     .footer-brand {
-        justify-content: center;
+        justify-content: left;
     }
 
 }
