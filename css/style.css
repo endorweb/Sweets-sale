@@ -594,48 +594,6 @@ header::after {
     color: black;
 }
 
-/* social-media */
-.social-media>div {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.social-media>span {
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: black;
-}
-
-.fb {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.snap {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.insta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.tiktok {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 /* Social media */
 .social-media {
     display: flex;
